@@ -1,0 +1,49 @@
+﻿@using RentaCar.Areas.Admin.ViewModels.BookService
+@model BookServiceIndexViewModel
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Book Services</h4>
+                        <a style="font-weight:bold" class="btn btn-outline-success" asp-action="create" asp-controller="bookservice" asp-area="admin">CREATE CATEGORY</a>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Title</th>
+                                        <th>Description</th>
+                                        <th>Photo</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var services in Model.Services)
+                                    {
+                                        <tr>
+                                            <td>@services.Id</td>
+                                            <td>@services.Title</td>
+                                            <td>@services.Description</td>
+                                            <td><img src="~/assets/img/@services.FilePath" /></td>
+
+                                            <td>
+                                                <a style="font-weight:bold" class="btn btn-outline-primary" asp-action="update" asp-controller="bookservice" asp-area="admin" asp-route-id="@services.Id">Update</a>
+                                                <a style="font-weight:bold" class="btn btn-outline-danger" onclick="confirm('Are You sure?')" asp-action="delete" asp-controller="bookservice" asp-area="admin" asp-route-id="@services.Id">Delete</a>
+                                                <a style="font-weight:bold" class="btn btn-outline-warning" asp-action="details" asp-controller="bookservice" asp-area="admin" asp-route-id="@services.Id">Details</a>
+                                            </td>
+                                        </tr>
+                                    }
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

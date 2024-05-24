@@ -1,0 +1,31 @@
+﻿﻿@using RentaCar.Areas.Admin.ViewModels.Category
+@model CategoryDetailsViewModel
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+
+                        <p class="card-description">
+                             Category Details
+                        </p>
+
+                        <span style="font-weight:bold">Id:</span>
+                        <span>@Model.Id</span>
+
+                        <br />
+                        <br />
+
+                        <span style="font-weight:bold">Title:</span>
+                        <span>@Model.Title</span>
+
+                    </div>
+                    <button class="btn btn-dark" style="margin-left:30px;margin-top:10px;width:100px;">
+                        <a style="text-decoration:none;font-weight:bold" asp-controller="category" asp-action="index" asp-area="admin">Cancel</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

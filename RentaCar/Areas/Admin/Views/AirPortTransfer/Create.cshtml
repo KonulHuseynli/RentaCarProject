@@ -1,0 +1,57 @@
+﻿@using RentaCar.Areas.Admin.ViewModels.AirPortTransfer
+@model AirPortTransferCreateViewModel
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+
+                        <p class="card-description">
+                            AirPortTransfer
+                        </p>
+                        <form enctype="multipart/form-data" method="post" asp-action="create" asp-controller="airporttransfer" asp-area="admin" class="forms-sample">
+                            <div class="form-group">
+                                <label asp-for="Brand">Brand</label>
+                                <input class="form-control" asp-for="Brand">
+                                <span asp-validation-for="Brand"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Model">Model</label>
+                                <input class="form-control" asp-for="Model">
+                                <span asp-validation-for="Model"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Price">Price</label>
+                                <input class="form-control" asp-for="Price">
+                                <span asp-validation-for="Price"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Description">Description</label>
+                                <input class="form-control" asp-for="Description">
+                                <span asp-validation-for="Description"></span>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label asp-for="MainPhoto">MainPhoto</label>
+                                <input class="form-control" asp-for="MainPhoto">
+                                <span asp-validation-for="MainPhoto"></span>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label asp-for="CreateDate">CreateDate</label>
+                                <input type="date" class="form-control" asp-for="CreateDate">
+                                <span asp-validation-for="CreateDate"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary me-2">Submit</button>
+                            <a class="btn btn-danger" asp-action="index" asp-controller="airporttransfer" asp-area="admin"> Cancel</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

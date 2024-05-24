@@ -1,0 +1,8 @@
+C:\Users\Konul\OneDrive\Masaüstü\RentaCar\RentaCar\obj\Debug\net6.0\RentaCar - Backup.csproj.AssemblyReference.cache
+C:\Users\Konul\OneDrive\Masaüstü\RentaCar\RentaCar\obj\Debug\net6.0\RentaCar - Backup.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Konul\OneDrive\Masaüstü\RentaCar\RentaCar\obj\Debug\net6.0\RentaCar - Backup.AssemblyInfoInputs.cache
+C:\Users\Konul\OneDrive\Masaüstü\RentaCar\RentaCar\obj\Debug\net6.0\RentaCar - Backup.AssemblyInfo.cs
+C:\Users\Konul\OneDrive\Masaüstü\RentaCar\RentaCar\obj\Debug\net6.0\RentaCar - Backup.csproj.CoreCompileInputs.cache
+C:\Users\Konul\OneDrive\Masaüstü\RentaCar\RentaCar\obj\Debug\net6.0\RentaCar - Backup.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Konul\OneDrive\Masaüstü\RentaCar\RentaCar\obj\Debug\net6.0\RentaCar - Backup.RazorAssemblyInfo.cache
+C:\Users\Konul\OneDrive\Masaüstü\RentaCar\RentaCar\obj\Debug\net6.0\RentaCar - Backup.RazorAssemblyInfo.cs
